@@ -1,0 +1,64 @@
+{
+  "name": "PartidoPadel",
+  "type": "object",
+  "properties": {
+    "fecha": {
+      "type": "string",
+      "format": "date",
+      "description": ""
+    },
+    "tipo": {
+      "type": "string",
+      "enum": [
+        "Amistoso",
+        "Americano",
+        "Torneo",
+        "Clase"
+      ],
+      "description": ""
+    },
+    "resultado": {
+      "type": "string",
+      "enum": [
+        "Gané",
+        "Perdí",
+        "Sin marcador"
+      ],
+      "description": ""
+    },
+    "marcador": {
+      "type": "string",
+      "description": ""
+    },
+    "duracion_min": {
+      "type": "integer",
+      "description": ""
+    },
+    "kcal": {
+      "type": "number",
+      "description": ""
+    },
+    "nivel": {
+      "type": "integer",
+      "description": "1 a 5"
+    },
+    "golpes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": ""
+    },
+    "nota": {
+      "type": "string",
+      "description": ""
+    },
+    "external_id": {
+      "type": "string",
+      "description": ""
+    }
+  },
+  "required": [
+    "fecha"
+  ]
+}

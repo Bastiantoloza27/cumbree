@@ -1,0 +1,19 @@
+{
+  "name": "Agua",
+  "type": "object",
+  "properties": {
+    "fecha": {
+      "type": "string",
+      "format": "date",
+      "description": ""
+    },
+    "vasos": {
+      "type": "integer",
+      "description": "Vasos de 250 ml"
+    }
+  },
+  "required": [
+    "fecha",
+    "vasos"
+  ]
+}

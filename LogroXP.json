@@ -1,0 +1,23 @@
+{
+  "name": "LogroXP",
+  "type": "object",
+  "properties": {
+    "fecha": {
+      "type": "string",
+      "format": "date",
+      "description": ""
+    },
+    "puntos": {
+      "type": "integer",
+      "description": ""
+    },
+    "motivo": {
+      "type": "string",
+      "description": ""
+    }
+  },
+  "required": [
+    "puntos",
+    "motivo"
+  ]
+}

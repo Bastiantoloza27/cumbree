@@ -1,0 +1,83 @@
+{
+  "name": "Perfil",
+  "type": "object",
+  "properties": {
+    "nombre": {
+      "type": "string",
+      "description": "Nombre visible"
+    },
+    "sexo": {
+      "type": "string",
+      "enum": [
+        "h",
+        "m"
+      ],
+      "description": "Sexo biológico para Mifflin-St Jeor"
+    },
+    "fecha_nacimiento": {
+      "type": "string",
+      "format": "date",
+      "description": ""
+    },
+    "edad": {
+      "type": "integer",
+      "description": ""
+    },
+    "estatura_cm": {
+      "type": "number",
+      "description": ""
+    },
+    "peso_inicial_kg": {
+      "type": "number",
+      "description": ""
+    },
+    "actividad": {
+      "type": "string",
+      "enum": [
+        "baja",
+        "ligera",
+        "moderada",
+        "alta"
+      ],
+      "description": ""
+    },
+    "tema": {
+      "type": "string",
+      "enum": [
+        "bosque",
+        "oceano",
+        "rosa",
+        "atardecer",
+        "violeta"
+      ],
+      "description": ""
+    },
+    "xp": {
+      "type": "integer",
+      "description": ""
+    },
+    "factor_kcal_ejercicio": {
+      "type": "number",
+      "description": "0,5 por defecto"
+    },
+    "meta_agua_vasos": {
+      "type": "integer",
+      "description": ""
+    },
+    "ajuste_kcal": {
+      "type": "integer",
+      "description": "Ajuste acumulado por revisiones semanales"
+    },
+    "onboarding_listo": {
+      "type": "boolean",
+      "description": ""
+    }
+  },
+  "required": [
+    "nombre",
+    "sexo",
+    "estatura_cm",
+    "peso_inicial_kg",
+    "actividad"
+  ]
+}

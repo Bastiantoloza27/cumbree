@@ -1,0 +1,24 @@
+{
+  "name": "CheckDiario",
+  "type": "object",
+  "properties": {
+    "objetivo_id": {
+      "type": "string"
+    },
+    "fecha": {
+      "type": "string",
+      "format": "date"
+    },
+    "semana_lunes": {
+      "type": "string",
+      "format": "date"
+    },
+    "hecho": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "objetivo_id",
+    "fecha"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "name": "SerieFuerza",
+  "type": "object",
+  "properties": {
+    "fecha": {
+      "type": "string",
+      "format": "date",
+      "description": ""
+    },
+    "sesion_id": {
+      "type": "string",
+      "description": ""
+    },
+    "ejercicio": {
+      "type": "string",
+      "description": ""
+    },
+    "serie": {
+      "type": "integer",
+      "description": ""
+    },
+    "kg": {
+      "type": "number",
+      "description": ""
+    },
+    "reps": {
+      "type": "integer",
+      "description": ""
+    },
+    "hecha": {
+      "type": "boolean",
+      "description": ""
+    }
+  },
+  "required": [
+    "fecha",
+    "ejercicio",
+    "serie"
+  ]
+}

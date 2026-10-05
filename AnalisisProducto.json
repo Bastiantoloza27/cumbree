@@ -1,0 +1,51 @@
+{
+  "name": "AnalisisProducto",
+  "type": "object",
+  "properties": {
+    "codigo_barras": {
+      "type": "string",
+      "description": ""
+    },
+    "nombre": {
+      "type": "string",
+      "description": ""
+    },
+    "puntaje": {
+      "type": "integer",
+      "description": "0–100"
+    },
+    "veredicto": {
+      "type": "string",
+      "description": ""
+    },
+    "sellos": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": ""
+    },
+    "pros": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": ""
+    },
+    "contras": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": ""
+    },
+    "alternativa": {
+      "type": "string",
+      "description": ""
+    }
+  },
+  "required": [
+    "codigo_barras",
+    "puntaje"
+  ]
+}

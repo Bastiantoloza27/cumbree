@@ -1,0 +1,52 @@
+{
+  "name": "Medicion",
+  "type": "object",
+  "properties": {
+    "fecha": {
+      "type": "string",
+      "format": "date",
+      "description": ""
+    },
+    "tipo": {
+      "type": "string",
+      "enum": [
+        "peso",
+        "cintura",
+        "cadera",
+        "brazo",
+        "pecho",
+        "muslo",
+        "grasa",
+        "pasos",
+        "sueno_h",
+        "kcal_activas"
+      ],
+      "description": ""
+    },
+    "valor": {
+      "type": "number",
+      "description": ""
+    },
+    "unidad": {
+      "type": "string",
+      "description": ""
+    },
+    "fuente": {
+      "type": "string",
+      "enum": [
+        "manual",
+        "apple_salud"
+      ],
+      "description": ""
+    },
+    "external_id": {
+      "type": "string",
+      "description": ""
+    }
+  },
+  "required": [
+    "fecha",
+    "tipo",
+    "valor"
+  ]
+}

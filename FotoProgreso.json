@@ -1,0 +1,28 @@
+{
+  "name": "FotoProgreso",
+  "type": "object",
+  "properties": {
+    "fecha": {
+      "type": "string",
+      "format": "date",
+      "description": ""
+    },
+    "imagen_url": {
+      "type": "string",
+      "description": "Archivo subido con UploadFile; privado"
+    },
+    "pose": {
+      "type": "string",
+      "enum": [
+        "frente",
+        "perfil",
+        "espalda"
+      ],
+      "description": ""
+    }
+  },
+  "required": [
+    "fecha",
+    "imagen_url"
+  ]
+}

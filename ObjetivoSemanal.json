@@ -1,0 +1,33 @@
+{
+  "name": "ObjetivoSemanal",
+  "type": "object",
+  "properties": {
+    "texto": {
+      "type": "string"
+    },
+    "tipo": {
+      "type": "string",
+      "enum": [
+        "auto-entrenos",
+        "auto-proteina",
+        "auto-agua",
+        "auto-registro",
+        "manual"
+      ]
+    },
+    "dias_meta": {
+      "type": "integer",
+      "description": "Días por semana (1–7)"
+    },
+    "activo": {
+      "type": "boolean"
+    },
+    "orden": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "texto",
+    "tipo"
+  ]
+}

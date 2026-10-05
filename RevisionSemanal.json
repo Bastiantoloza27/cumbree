@@ -1,0 +1,54 @@
+{
+  "name": "RevisionSemanal",
+  "type": "object",
+  "properties": {
+    "semana_lunes": {
+      "type": "string",
+      "format": "date",
+      "description": ""
+    },
+    "peso_promedio": {
+      "type": "number",
+      "description": ""
+    },
+    "entrenamientos_hechos": {
+      "type": "integer",
+      "description": ""
+    },
+    "entrenamientos_plan": {
+      "type": "integer",
+      "description": ""
+    },
+    "dias_proteina_ok": {
+      "type": "integer",
+      "description": ""
+    },
+    "dias_registrados": {
+      "type": "integer",
+      "description": ""
+    },
+    "energia": {
+      "type": "integer",
+      "description": "1 a 5"
+    },
+    "nota": {
+      "type": "string",
+      "description": ""
+    },
+    "resumen_coach": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": ""
+    },
+    "ajuste_kcal": {
+      "type": "integer",
+      "description": ""
+    }
+  },
+  "required": [
+    "semana_lunes",
+    "energia"
+  ]
+}

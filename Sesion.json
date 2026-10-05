@@ -1,0 +1,73 @@
+{
+  "name": "Sesion",
+  "type": "object",
+  "properties": {
+    "semana_lunes": {
+      "type": "string",
+      "format": "date",
+      "description": "Lunes de la semana"
+    },
+    "dia": {
+      "type": "integer",
+      "description": "0=lunes … 6=domingo"
+    },
+    "titulo": {
+      "type": "string",
+      "description": ""
+    },
+    "tipo": {
+      "type": "string",
+      "enum": [
+        "fuerza",
+        "aerobico",
+        "deporte",
+        "movilidad",
+        "descanso"
+      ],
+      "description": ""
+    },
+    "duracion_min": {
+      "type": "integer",
+      "description": ""
+    },
+    "detalle": {
+      "type": "string",
+      "description": ""
+    },
+    "plantilla_ejercicios": {
+      "type": "string",
+      "description": "A, B, Torso, Pierna, Salud"
+    },
+    "hecho": {
+      "type": "boolean",
+      "description": ""
+    },
+    "fijo": {
+      "type": "boolean",
+      "description": "Día fijo del usuario (ej. pádel jueves)"
+    },
+    "origen": {
+      "type": "string",
+      "enum": [
+        "sugerido",
+        "manual",
+        "apple_salud"
+      ],
+      "description": ""
+    },
+    "external_id": {
+      "type": "string",
+      "description": "ID de Apple Salud para no duplicar"
+    },
+    "es_plantilla": {
+      "type": "boolean",
+      "description": "Parte del plan semanal fijo"
+    }
+  },
+  "required": [
+    "semana_lunes",
+    "dia",
+    "titulo",
+    "tipo"
+  ]
+}

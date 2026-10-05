@@ -1,0 +1,83 @@
+{
+  "name": "Fase",
+  "type": "object",
+  "properties": {
+    "meta_id": {
+      "type": "string",
+      "description": ""
+    },
+    "numero": {
+      "type": "integer",
+      "description": ""
+    },
+    "nombre": {
+      "type": "string",
+      "description": ""
+    },
+    "fecha_inicio": {
+      "type": "string",
+      "format": "date",
+      "description": ""
+    },
+    "fecha_fin": {
+      "type": "string",
+      "format": "date",
+      "description": ""
+    },
+    "semanas": {
+      "type": "integer",
+      "description": ""
+    },
+    "kcal_factor": {
+      "type": "number",
+      "description": "Multiplicador sobre la mantención"
+    },
+    "proteina_g_kg": {
+      "type": "number",
+      "description": ""
+    },
+    "sesiones_fuerza": {
+      "type": "integer",
+      "description": ""
+    },
+    "sesiones_aerobico": {
+      "type": "integer",
+      "description": ""
+    },
+    "sesiones_deporte": {
+      "type": "integer",
+      "description": ""
+    },
+    "series": {
+      "type": "string",
+      "description": ""
+    },
+    "objetivo": {
+      "type": "string",
+      "description": ""
+    },
+    "criterio_avance": {
+      "type": "string",
+      "description": ""
+    },
+    "por_que": {
+      "type": "string",
+      "description": ""
+    },
+    "fuentes": {
+      "type": "string",
+      "description": ""
+    },
+    "pausa_mantencion": {
+      "type": "boolean",
+      "description": ""
+    }
+  },
+  "required": [
+    "meta_id",
+    "numero",
+    "nombre",
+    "fecha_inicio",
+    "fecha_fin"
+  ]
+}

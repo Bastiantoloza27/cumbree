@@ -1,0 +1,64 @@
+{
+  "name": "Dimension",
+  "type": "object",
+  "properties": {
+    "meta_id": {
+      "type": "string",
+      "description": ""
+    },
+    "nombre": {
+      "type": "string",
+      "description": ""
+    },
+    "fuente": {
+      "type": "string",
+      "enum": [
+        "peso",
+        "fuerza",
+        "padel",
+        "deporte",
+        "retos",
+        "medida",
+        "manual"
+      ],
+      "description": ""
+    },
+    "ejercicio": {
+      "type": "string",
+      "description": "Para fuente=fuerza"
+    },
+    "medida": {
+      "type": "string",
+      "description": "Para fuente=medida"
+    },
+    "unidad": {
+      "type": "string",
+      "description": ""
+    },
+    "valor_inicial": {
+      "type": "number",
+      "description": ""
+    },
+    "valor_objetivo": {
+      "type": "number",
+      "description": ""
+    },
+    "valor_actual": {
+      "type": "number",
+      "description": "Solo fuente=manual"
+    },
+    "activa": {
+      "type": "boolean",
+      "description": ""
+    },
+    "orden": {
+      "type": "integer",
+      "description": ""
+    }
+  },
+  "required": [
+    "meta_id",
+    "nombre",
+    "fuente"
+  ]
+}

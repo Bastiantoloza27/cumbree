@@ -1,0 +1,83 @@
+{
+  "name": "RegistroComida",
+  "type": "object",
+  "properties": {
+    "fecha": {
+      "type": "string",
+      "format": "date",
+      "description": ""
+    },
+    "comida": {
+      "type": "string",
+      "enum": [
+        "desayuno",
+        "almuerzo",
+        "once",
+        "cena",
+        "colación"
+      ],
+      "description": ""
+    },
+    "alimento_id": {
+      "type": "string",
+      "description": ""
+    },
+    "nombre": {
+      "type": "string",
+      "description": ""
+    },
+    "porcion": {
+      "type": "string",
+      "description": ""
+    },
+    "cantidad": {
+      "type": "number",
+      "description": ""
+    },
+    "kcal": {
+      "type": "number",
+      "description": ""
+    },
+    "proteina_g": {
+      "type": "number",
+      "description": ""
+    },
+    "carbohidratos_g": {
+      "type": "number",
+      "description": ""
+    },
+    "grasas_g": {
+      "type": "number",
+      "description": ""
+    },
+    "metodo": {
+      "type": "string",
+      "enum": [
+        "texto",
+        "voz",
+        "foto",
+        "escáner",
+        "búsqueda",
+        "coach",
+        "manual",
+        "repetir"
+      ],
+      "description": ""
+    },
+    "confianza": {
+      "type": "string",
+      "enum": [
+        "alta",
+        "media",
+        "baja"
+      ],
+      "description": ""
+    }
+  },
+  "required": [
+    "fecha",
+    "comida",
+    "nombre",
+    "kcal"
+  ]
+}

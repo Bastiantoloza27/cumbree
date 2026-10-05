@@ -1,0 +1,67 @@
+{
+  "name": "Reto",
+  "type": "object",
+  "properties": {
+    "nombre": {
+      "type": "string",
+      "description": ""
+    },
+    "categoria": {
+      "type": "string",
+      "enum": [
+        "Probar deporte",
+        "Ruta",
+        "Pádel",
+        "Fuerza",
+        "Otro"
+      ],
+      "description": ""
+    },
+    "meta_valor": {
+      "type": "number",
+      "description": ""
+    },
+    "unidad": {
+      "type": "string",
+      "description": ""
+    },
+    "progreso": {
+      "type": "number",
+      "description": ""
+    },
+    "fecha_objetivo": {
+      "type": "string",
+      "format": "date",
+      "description": ""
+    },
+    "metodo_validacion": {
+      "type": "string",
+      "enum": [
+        "salud",
+        "foto",
+        "manual"
+      ],
+      "description": ""
+    },
+    "evidencia_url": {
+      "type": "string",
+      "description": ""
+    },
+    "estado": {
+      "type": "string",
+      "enum": [
+        "activo",
+        "logrado"
+      ],
+      "description": ""
+    },
+    "xp": {
+      "type": "integer",
+      "description": ""
+    }
+  },
+  "required": [
+    "nombre",
+    "meta_valor"
+  ]
+}

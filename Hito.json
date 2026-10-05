@@ -1,0 +1,32 @@
+{
+  "name": "Hito",
+  "type": "object",
+  "properties": {
+    "meta_id": {
+      "type": "string",
+      "description": ""
+    },
+    "texto": {
+      "type": "string",
+      "description": ""
+    },
+    "fecha_objetivo": {
+      "type": "string",
+      "format": "date",
+      "description": ""
+    },
+    "logrado": {
+      "type": "boolean",
+      "description": ""
+    },
+    "fecha_logro": {
+      "type": "string",
+      "format": "date",
+      "description": ""
+    }
+  },
+  "required": [
+    "meta_id",
+    "texto"
+  ]
+}

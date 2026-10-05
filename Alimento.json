@@ -1,0 +1,83 @@
+{
+  "name": "Alimento",
+  "type": "object",
+  "properties": {
+    "nombre": {
+      "type": "string",
+      "description": ""
+    },
+    "marca": {
+      "type": "string",
+      "description": ""
+    },
+    "codigo_barras": {
+      "type": "string",
+      "description": ""
+    },
+    "porcion": {
+      "type": "string",
+      "description": ""
+    },
+    "porcion_g": {
+      "type": "number",
+      "description": ""
+    },
+    "kcal": {
+      "type": "number",
+      "description": ""
+    },
+    "proteina_g": {
+      "type": "number",
+      "description": ""
+    },
+    "carbohidratos_g": {
+      "type": "number",
+      "description": ""
+    },
+    "grasas_g": {
+      "type": "number",
+      "description": ""
+    },
+    "azucares_g": {
+      "type": "number",
+      "description": ""
+    },
+    "grasa_sat_g": {
+      "type": "number",
+      "description": ""
+    },
+    "sodio_mg": {
+      "type": "number",
+      "description": ""
+    },
+    "fibra_g": {
+      "type": "number",
+      "description": ""
+    },
+    "sellos": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": ""
+    },
+    "fuente": {
+      "type": "string",
+      "enum": [
+        "base Cumbre",
+        "Open Food Facts",
+        "manual",
+        "estimado_ia"
+      ],
+      "description": ""
+    },
+    "verificado": {
+      "type": "boolean",
+      "description": ""
+    }
+  },
+  "required": [
+    "nombre",
+    "kcal"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "name": "Meta",
+  "type": "object",
+  "properties": {
+    "titulo": {
+      "type": "string",
+      "description": ""
+    },
+    "fecha_inicio": {
+      "type": "string",
+      "format": "date",
+      "description": ""
+    },
+    "fecha_objetivo": {
+      "type": "string",
+      "format": "date",
+      "description": ""
+    },
+    "estado": {
+      "type": "string",
+      "enum": [
+        "activa",
+        "lograda",
+        "reemplazada"
+      ],
+      "description": ""
+    },
+    "plantilla_fases": {
+      "type": "string",
+      "enum": [
+        "recomp",
+        "ganar",
+        "salud"
+      ],
+      "description": ""
+    }
+  },
+  "required": [
+    "titulo",
+    "fecha_objetivo"
+  ]
+}

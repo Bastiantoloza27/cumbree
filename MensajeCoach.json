@@ -1,0 +1,34 @@
+{
+  "name": "MensajeCoach",
+  "type": "object",
+  "properties": {
+    "rol": {
+      "type": "string",
+      "enum": [
+        "usuario",
+        "coach"
+      ],
+      "description": ""
+    },
+    "contenido": {
+      "type": "string",
+      "description": ""
+    },
+    "imagen_url": {
+      "type": "string",
+      "description": ""
+    },
+    "propuesta_json": {
+      "type": "string",
+      "description": "Registro propuesto por el coach"
+    },
+    "aceptada": {
+      "type": "boolean",
+      "description": ""
+    }
+  },
+  "required": [
+    "rol",
+    "contenido"
+  ]
+}
